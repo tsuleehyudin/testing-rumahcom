@@ -1,0 +1,17 @@
+test.html
+1. comment 'get the data using ajax' need to use // or /**/
+2. inside <!-- //--> this should insert javascript syntax. any javascript syntax writed in html dom should in <!-- --> this usefull for SEO
+
+getinfo.php
+3. i think we need to use baseObj as abstract class, so it cannot instantiate  
+4. $data cannot use function return value, so if we need to check if the data is an object or not we need to instantiate the object who can return the value. we can instatiate propertyData,hdbData or condoData then get the object for get the value.
+
+data.php
+5. class baseObj prefer to use as abstract so if we need to call the the object we should extends it.
+6. variable table need to set as protected, so it can pass from class who extend the baseObj;
+7. variable mysql need to set as private.
+8. if we extends the propertyData so we need to set varaible table to protected if we need to change it in other class who extends the propertyData class
+9. set the variable table from class hdbData and condoData as protected 
+
+DB
+10. auto increment need to set as primary key
