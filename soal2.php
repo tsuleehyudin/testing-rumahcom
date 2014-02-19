@@ -9,9 +9,8 @@ function fb($from = 0,$to = 0){
 	$from = (int) $from; #set to integer
 	$to = (int) $to; #set to integer
 	
-	if($from > $to) return $text; #$from should be greater than $to
-	if($from < 0 || $to < 0) return $text; #$the data should positif
-	
+	if($from > $to || $from < 0 || $to < 0) return $text; #$from should be greater than $to $the data should positif
+
 	for($i=$from;$i <= $to;$i++){
 		if($i % 3 === 0) $text.='Fizz';
 		if($i % 5  === 0) $text.='Buzz';
